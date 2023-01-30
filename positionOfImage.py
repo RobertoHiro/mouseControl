@@ -1,4 +1,11 @@
 import pyautogui
 
-def getPositionOfImage():
-    return pyautogui.locateCenterOnScreen('start.png')#If the file is not a png file it will not work
+def clickOnImage(imgPath):
+    pyautogui.click(pyautogui.locateCenterOnScreen(imgPath))
+
+def getPositionOfImage(imgPath):
+    return pyautogui.locateCenterOnScreen(imgPath)
+
+def click(x,y):
+    pyautogui.click(x, y)
+    pyautogui.click()
